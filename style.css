@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(0, 0, 0); 
+    color: srgb(255, 255, 255);
+    width: 100vw;
+}
+
+.hello
+{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 3rem;
+} 
+
+/* Copyright en bas a droite de la page */
+.copy {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 0.75rem;
+}
+
+.insta {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.git {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  
+}
+
+.mail {
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+  color: rgb(255, 255, 255);
+  front-size: 0,75rem;
+  
+}
+
+.discord {
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+  front-size: 0,75rem;
+  color: rgb(255, 255, 255);
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 1px dashed white;
+  border-radius: 50%;
+  position: absolute;
+  animation: Anim1 1s infinite alternate;
+pointer-events: none;
+}
+
+.cursor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 5px;
+  height: 5px;
+  background: crimson;
+  border-radius: 50%;
+}
+
+.expand {
+  animation: Anim2 .5s;
+  background: crimson;
+  border: 1px solid crimson;
+}
+@keyframes Anim1 {
+  from {
+      transform: scale(1) rotate(0deg);
+  }
+  to {
+      transform: scale(0.7) rotate(190deg);
+  }
+}
+
+@keyframes Anim2 {
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(2);
+  }
+  100%{
+      transform: scale(1);
+      opacity:0;
+  }
+}
+
+    
+
